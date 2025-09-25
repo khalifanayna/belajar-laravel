@@ -59,6 +59,6 @@ class MataKuliahController extends Controller
      */
     public function destroy()
     {
-        return "Menampilkan Data Mata Kuliah";
+        return "Menampilkan Data Mata Kuliah Ini";
     }
 }
