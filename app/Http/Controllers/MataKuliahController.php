@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MataKuliahController extends Controller
+class MatakuliahController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return "Menampilkan Data Mata Kuliah";
+        return "Menampilkan data matakuliah";
     }
 
     /**
@@ -19,23 +19,27 @@ class MataKuliahController extends Controller
      */
     public function create()
     {
-        return "Menampilkan Data Mata Kuliah";
+        return "Menampilkan data matakuliah";
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store()
     {
-       return "Menampilkan Data Mata Kuliah";
+        return "Menampilkan data matakuliah";
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($param1 = null)
     {
-        return "Menampilkan Data Mata Kuliah";
+        if($param1){
+            return 'Anda mengakses matahkuliah'.$param1;
+        }else if($param1){
+            return 'Masukkan kode matahkuliah';
+        }
     }
 
     /**
@@ -43,7 +47,7 @@ class MataKuliahController extends Controller
      */
     public function edit()
     {
-        return "Menampilkan Data Mata Kuliah";
+        return "Menampilkan data matakuliah";
     }
 
     /**
@@ -51,7 +55,7 @@ class MataKuliahController extends Controller
      */
     public function update()
     {
-        return "Menampilkan Data Mata Kuliah";
+        return "Menampilkan data matakuliah";
     }
 
     /**
@@ -59,6 +63,6 @@ class MataKuliahController extends Controller
      */
     public function destroy()
     {
-        return "Menampilkan Data Mata Kuliah Ini";
+        return "Menampilkan data matakuliah";
     }
 }
